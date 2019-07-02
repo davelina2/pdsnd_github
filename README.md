@@ -4,7 +4,7 @@ Include the date you created this project and README file.
 ### Exploring the Bikeshare data from NY, Chicago and Washington
 Replace the Project Title
 
-### The project is tracking relevant statistical Information on Bike Sharing
+### The project is tracking relevant Analytical and statistical Information on Bike Sharing
 ### in New York City, Washington and Chicago
 Describe what your project is about and what it does
 
