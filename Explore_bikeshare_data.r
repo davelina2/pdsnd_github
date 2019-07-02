@@ -44,8 +44,8 @@ y
 options(repr.plot.width=8, repr.plot.height=3)
 ggplot(y, aes(x=Start.Station, y= duration, main= "Trip Duration Average by Station", na.rm=TRUE)) +
 geom_bar(stat = "identity")+
-coord_flip() + scale_y_continuous(name="Average Trip Duration") + scale_x_discrete(name= "Start Station")+ 
-theme(axis.title.x =element_text(face="bold", color = "#008000",size=8, angle=0), 
+coord_flip() + scale_y_continuous(name="Average Trip Duration") + scale_x_discrete(name= "Start Station")+
+theme(axis.title.x =element_text(face="bold", color = "#008000",size=8, angle=0),
      axis.text.y = element_text(face="bold", color="#008000",size=8, angle=0,))
 
 
@@ -59,6 +59,6 @@ group_by(Gender)%>%
 summarize(gender_count=n())
 
 #Generate the Garphic using the regular boxplot function
-boxplot(chi$Trip.Duration ~ chi$Gender,col=c("red","green","blue"), data = chi, ylim=c(0,4000), xlab="Gender",ylab= "Trip Duration", main= "Chicago Trip Duration by Gender")
+boxplot(chi$Trip.Duration ~ chi$Gender,col=c("black","red","yellow"), data = chi, ylim=c(0,4000), xlab="Gender",ylab= "Trip Duration", main= "Chicago Trip Duration by Gender")
 
 system('python -m nbconvert Explore_bikeshare_data.ipynb')
