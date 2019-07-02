@@ -29,7 +29,7 @@ sum(wash$Trip.Duration,na.rm=TRUE)
 mean(wash$Trip.Duration, na.rm=TRUE)
 
 ## Now we going to find the average of trip duration by starting stations, and graphically we going to plott the result
-##Loading the libraries
+##Loading the libraries needed to generate the bar plots.
 
 library(ggplot2)
 library(magrittr)
@@ -44,8 +44,8 @@ y
 options(repr.plot.width=8, repr.plot.height=3)
 ggplot(y, aes(x=Start.Station, y= duration, main= "Trip Duration Average by Station", na.rm=TRUE)) +
 geom_bar(stat = "identity")+
-coord_flip() + scale_y_continuous(name="Average Trip Duration") + scale_x_discrete(name= "Start Station")+ 
-theme(axis.title.x =element_text(face="bold", color = "#008000",size=8, angle=0), 
+coord_flip() + scale_y_continuous(name="Average Trip Duration") + scale_x_discrete(name= "Start Station")+
+theme(axis.title.x =element_text(face="bold", color = "#008000",size=8, angle=0),
      axis.text.y = element_text(face="bold", color="#008000",size=8, angle=0,))
 
 
