@@ -42,7 +42,7 @@ y <- head(x,15)
 y
 # Plotting the results using the ggplot
 options(repr.plot.width=8, repr.plot.height=3)
-ggplot(y, aes(x=Start.Station, y= duration, main= "Trip Duration Average by Station", na.rm=TRUE)) +
+ggplot(y, aes(x=Start.Station, y= duration, main= "Average of Trip Duration by Station", na.rm=TRUE)) +
 geom_bar(stat = "identity")+
 coord_flip() + scale_y_continuous(name="Average Trip Duration") + scale_x_discrete(name= "Start Station")+
 theme(axis.title.x =element_text(face="bold", color = "#008000",size=8, angle=0),
